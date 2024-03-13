@@ -1,7 +1,8 @@
 nav {
+  height: 70px;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #d0d0d0;
   padding: 7px 0px;
@@ -13,10 +14,22 @@ nav * {
   background-color: rgb(242, 242, 242);
 }
 
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo p {
+  width: 80px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
 .nav-logo img {
   width: 50px;
   height: 50px;
   margin-left: 50px;
+  margin-right: 10px;
 }
 
 nav ul {
@@ -52,5 +65,5 @@ nav .nav-subscribeEmail {
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 15px;
 }

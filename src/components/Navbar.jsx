@@ -1,16 +1,13 @@
 import { Link } from "react-router-dom";
-import React from "react";
 import "../assets/css/navbar.css";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdOutgoingMail } from "react-icons/md";
 function Navbar() {
   return (
     <nav>
       <div className="nav-logo">
-        <img
-          src="/img/ceramicNobg.png"
-          alt="Logo"
-          srcSet="/img/ceramicNobg.png"
-        />
+        <img src="/img/logo.png" alt="Logo" srcSet="/img/logo.png" />
+        <p>Ceramic & Tiles</p>
       </div>
       <div>
         <ul>
@@ -26,15 +23,9 @@ function Navbar() {
         </ul>
       </div>
       <div className="nav-subscribeEmail">
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Subscribe Us by Email"
-          aria-label="Email"
-          aria-describedby="email"
-        />
-        <div className="nav-searchicon">
-          <MdOutgoingMail size={40} />
+        <div className="nav-searchicon mr-2">
+          <span>+1 1800-065-521</span>
+          <BiSolidPhoneCall size={25} />
         </div>
       </div>
     </nav>
