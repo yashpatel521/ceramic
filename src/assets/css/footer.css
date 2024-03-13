@@ -1,13 +1,18 @@
 footer {
   border-top: 1px solid #d0d0d0;
-  background-color: rgb(242, 242, 242);
+  background-image: url("/img/tile.jpg");
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
+footer .footer-backdrop {
+  /* backdrop-filter: blur(4px); */
+  backdrop-filter: brightness(0.4);
+}
 footer * {
-  background-color: rgb(242, 242, 242);
+  color: white;
+  background-color: transparent;
 }
 
 footer .footer-first {
@@ -19,9 +24,14 @@ footer .footer-first {
   justify-content: space-between;
 }
 
+footer .footer-first p {
+  margin-left: 10px;
+  width: 144px;
+  font-size: 28px;
+}
 footer .footer-first img {
   height: 100px;
-  width: 480px;
+  width: 190px;
 }
 
 footer .footer-second {
@@ -42,7 +52,7 @@ footer .footer-third {
 }
 
 footer .footer-hr {
-  border: 1px solid #777777;
+  border: 1px solid #ffffff;
   width: 92%;
   margin: 0 4%;
 }

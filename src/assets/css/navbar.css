@@ -1,17 +1,27 @@
 nav {
-  height: 70px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid #d0d0d0;
-  padding: 7px 0px;
-  background-color: rgb(242, 242, 242);
+
+  /* background-color: rgb(242, 242, 242); */
+  background-image: url("/img/tile.jpg");
+
   position: fixed;
   width: 100%;
 }
 nav * {
-  background-color: rgb(242, 242, 242);
+  color: #ffffff;
+  background-color: transparent;
+  /* background-color: rgb(242, 242, 242); */
+}
+
+nav .nav-backdrop {
+  height: 70px;
+  width: 100%;
+  padding: 7px 0px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-logo {
@@ -47,7 +57,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 }
 
 .nav-subscribeEmail {
